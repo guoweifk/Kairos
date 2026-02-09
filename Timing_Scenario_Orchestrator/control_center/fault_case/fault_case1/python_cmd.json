@@ -1,8 +1,0 @@
-{
-  "192.168.80.200": [
-    {
-      "command": "docker ps -a --format '{{.Names}}  {{.State}}'",
-      "time_out": 500
-    }
-  ]
-}
