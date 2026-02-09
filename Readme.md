@@ -78,5 +78,5 @@ At this stage, we only release the core components that are directly related to 
 1. Curated failure cases.
 We will provide a collection of representative failure cases to help users quickly understand the usage of Chronos and facilitate further research on timing-induced interaction failures.
 
-2. Cascading effects under large-scale deployments.
-We plan to release scenarios, as discussed in the Discussion section of the paper, to study the cascading impact of timing-induced interaction failures under large-scale deployments.
+2. Cascading effects under realistic deployments.
+As discussed in the Discussion section of the paper, timing-induced interaction failures can give rise to cascading failures in modern cellular core networks(As shown in cascading.png). We have empirically validated such cascading behaviors in an open-source 5G core network (Open5GS), using two commercial UEs and a software-defined radio. Our results indicate that, in the presence of operational mechanisms such as load balancing and redundancy, timing-induced interaction failures may propagate across core network functions and spontaneously evolve into cascading failures. We further observe that these failures are more likely to be triggered under network congestion, where increased delays and execution timing uncertainty exacerbate harmful control-plane interactions.
