@@ -1,10 +1,10 @@
-# Chronos: Lightweight Testing Framework for Timing-Induced Interaction Failures in LTE and 5G Core Networks
+# Kairos: Lightweight Testing Framework for Timing-Induced Interaction Failures in LTE and 5G Core Networks
 
 ## Overview
 
-This repository provides an anonymized artifact for **Chronos**: Lightweight Testing Framework for Timing-Induced Interaction Failures in LTE and 5G Core Networks.
+This repository provides an anonymized artifact for **Kairos**: Lightweight Testing Framework for Timing-Induced Interaction Failures in LTE and 5G Core Networks.
 
-Chronos focuses on failures caused by timing-induced interaction anomalies between concurrent control-plane procedures under
+Kairos focuses on failures caused by timing-induced interaction anomalies between concurrent control-plane procedures under
 different execution timings.  
 The framework operates in a black-box manner and uses only protocol-compliant UE behaviors.
 
@@ -13,8 +13,8 @@ The artifact is implemented using a lightweight **agent–server–center** arch
 ---
 
 ## Architecture
-![Chronos architecture](architecture.png)
-Chronos consists of three logical components:
+![Kairos architecture](architecture.png)
+Kairos consists of three logical components:
 
 Network_impairment_Engine
 - **engine**  
@@ -76,7 +76,7 @@ In our setup, the smartphone model is **Xiaomi Mi 10**, and the srsRAN platform 
 At this stage, we only release the core components that are directly related to the paper. We plan to extend this artifact in the following directions.
 
 1. Curated failure cases.
-We will provide a collection of representative failure cases to help users quickly understand the usage of Chronos and facilitate further research on timing-induced interaction failures.
+We will provide a collection of representative failure cases to help users quickly understand the usage of Kairos and facilitate further research on timing-induced interaction failures.
 
 2. Cascading effects under realistic deployments.
 As discussed in the Discussion section of the paper, timing-induced interaction failures can give rise to cascading failures in modern cellular core networks(As shown in cascading.png). We have empirically validated such cascading behaviors in an open-source 5G core network (Open5GS), using two commercial UEs and a software-defined radio. Our results indicate that, in the presence of operational mechanisms such as load balancing and redundancy, timing-induced interaction failures may propagate across core network functions and spontaneously evolve into cascading failures. We further observe that these failures are more likely to be triggered under network congestion, where increased delays and execution timing uncertainty exacerbate harmful control-plane interactions.
